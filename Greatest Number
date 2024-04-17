@@ -1,0 +1,13 @@
+def findGreatestNumber(numbers): 
+    result=0
+    n=len(numbers)
+
+    for i in range(n):
+        if numbers[i]>result:
+            result=numbers[i]
+    return result
+
+numbers=[15,18,2,22,181,200,18] 
+result=findGreatestNumber(numbers)
+print("Greatest element is",result)
+
