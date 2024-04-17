@@ -1,0 +1,12 @@
+def findSmallestNumber(numbers): 
+    result=1000000000
+    n=len(numbers)
+
+    for i in range(n):
+        if numbers[i]<result:
+            result=numbers[i]
+    return result
+
+numbers=[15,18,2,22,181,200,18] 
+result=findSmallestNumber(numbers)
+print("Smallest element is",result)
