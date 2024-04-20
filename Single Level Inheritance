@@ -1,0 +1,18 @@
+class Box:
+    def __init__(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+
+class child(Box):
+    def __init__(self,name,rollno,sem):
+        self.name=name
+        self.rollno=rollno
+        self.sem=sem
+        Box.__init__(self,"chandrakala",34)
+
+obj1=child("chandrakala",34,4)
+print(obj1.name)
+print(obj1.rollno)
+print(obj1.sem)
+
+
